@@ -1,4 +1,9 @@
 <?php
     //Conectar con la Base de Datos
-    $connect = mysqli_connect("localhost", "root", "1234", "bd_usados2015");
+    $dbhost = getenv("MYSQL_SERVICE_HOST");
+    $dbport = getenv("MYSQL_SERVICE_PORT");
+    $dbuser = getenv("databaseuser");
+    $dbpwd = getenv("databasepassword");
+    $dbname = getenv("databasename");
+    $connect = mysqli_connect("$dbhost", "$dbuser", "$dbpwd", "$dbname");
 ?>
