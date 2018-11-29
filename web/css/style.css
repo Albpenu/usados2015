@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+}
+
+img#logo {
+    /*width: 450px;*/
+    width: 29%;
+    display: block;
+    margin: -5px auto;
+}
+
+body {
+    background-image: url("../rsc/img/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'mejor';
+}
+
+@font-face {
+    font-family: 'mejor';
+    src: url('../fonts/mejor.otf') format('opentype');
+}
+
+nav ul li {
+    padding: 3px;
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul {
+    width: 350px;
+    margin: 0px auto;
+}
+
+img.option {
+    width: 80px;
+    cursor: pointer;
+}
+
+div#seccion { 
+    margin: -88.25px auto;
+    position: absolute;
+}
+
+form#formu {
+    width: 155px;
+    margin: 0px auto;
+    position: absolute;
+    left: 50.7%;
+    top: 55%;
+}
+
+@-webkit-keyframes toggle {
+    0% {
+        opacity: 0;
+      }
+
+    100% {
+        opacity: 1;
+      }
+}
+
+footer {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+
+@media screen and (max-width: 350px){
+
+    nav{
+        margin-left: -7%;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    img#logo {
+        /*width: 450px;*/
+        width: 310px;
+        display: block;
+        margin: -5px auto;
+    }
+
+}
