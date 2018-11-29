@@ -1,9 +1,8 @@
 <?php
-$manejador="mysql";
-$servidor="localhost";
-$usuario="root";
-$pass="1234";
-$base="bd_usados2015";
-$cadena="$manejador:host=$servidor;dbname=$base";
-$cnx = new PDO($cadena,$usuario,$pass);
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbport = getenv("MYSQL_SERVICE_PORT");
+$dbuser = getenv("databaseuser");
+$dbpwd = getenv("databasepassword");
+$dbname = getenv("databasename");
+$cnx = new PDO($dbhost, $dbuser, $dbpwd, $dbname);
 ?>
